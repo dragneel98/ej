@@ -7,3 +7,18 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
+function fizzBuzz(n) {
+    if (n % 3 === 0 && n % 5 === 0) {
+        return "fizzbuzz"
+    }
+    else {
+        if (n % 3 === 0) {
+            return "fizz"
+        }
+        if (n % 5 === 0) {
+            return "buzz"
+        }
+    }
+}
+
+console.log(fizzBuzz(10));
